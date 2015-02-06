@@ -1,1 +1,9 @@
 <h1>Hello, Noah.</h1>
+
+<ul>
+<% @comments.each do |comment| %>
+  <li>
+  <%= comment.content %>
+  </li>
+<% end %>
+</ul>
