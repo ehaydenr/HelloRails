@@ -1,5 +1,16 @@
 <h1>Hello, Noah.</h1>
 
+<hr />
+
+<div class="form">
+<%= form_for(@new_comment) do |c| %>
+  <div class="content">
+    <%= c.text_field :content %>
+    <%= c.submit %>
+  </div>
+<% end %>
+</div>
+
 <ul>
 <% @comments.each do |comment| %>
   <li>

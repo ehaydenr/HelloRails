@@ -2,11 +2,8 @@ class PagesController < ApplicationController
 
   def home
     @comments = Comment.all
-    puts "Hello"
+    @new_comment = Comment.new
   end
 
-  def home_render
-    render :home
-  end
 
 end
