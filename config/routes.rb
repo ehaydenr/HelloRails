@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< Updated upstream
   get 'comments/index'
 
   get 'comments/new'
@@ -8,11 +9,17 @@ Rails.application.routes.draw do
   resources :comments
   root 'pages#home'
 
+=======
+  get 'welcome/index'
+
+    get '/' => 'pages#home'
+>>>>>>> Stashed changes
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'welcome#index'
+  resources :articles
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
